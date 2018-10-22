@@ -18,7 +18,7 @@ pipeline {
 		stage('Deploy'){
 			steps{
 				withMaven(maven: 'MVN353'){
-					sh 'mvn clean deploy -Dmaven.test.skip=true -f mvn_prj/pom.xml -s mvn_prj/conf/settings.xml'
+					sh 'mvn clean deploy -Dmaven.test.skip=true -f mvn_project/pom.xml -s mvn_project/conf/settings.xml'
 				}			
 			}
 		}
