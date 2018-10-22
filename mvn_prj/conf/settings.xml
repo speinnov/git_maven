@@ -7,7 +7,18 @@
       <usePluginRegistry/>
       <offline/>
       <pluginGroups/>
-      <servers/>
+      <servers>
+            <server>
+                  <username>admin</username>
+                  <password>Talend123</password>
+                  <id>talend-releases</id>
+            </server>
+            <server>
+                  <username>admin</username>
+                  <password>Talend123</password>
+                  <id>talend-snapshots</id>
+            </server>
+      </servers>
       <mirrors/>
       <proxies/>
       <profiles/>
