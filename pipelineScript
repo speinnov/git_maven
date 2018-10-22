@@ -7,7 +7,7 @@ pipeline {
 			steps{
 				withMaven(maven: 'MVN353'){
 
-				sh 'mvn clean compile -f ./mvn_project/pom.xml -X'
+				sh 'mvn clean compile -f ./mvn_project/pom.xml '
 				} 
 				
 			}
@@ -19,7 +19,7 @@ pipeline {
 			steps{
 				withMaven(maven: 'MVN353'){
 
-					sh 'make deploy -f ./mvn_project/pom.xml -X'
+					sh 'make deploy -f ./mvn_project/pom.xml '
 				}			
 			}
 		}
