@@ -15,6 +15,14 @@ pipeline {
 		// tests
 		 
 		// deploy
+		stage('Deploy'){
+			steps{
+				withMaven(maven: 'MVN353'){
+
+					sh 'make deploy -f ./mvn_project/pom.xml -X'
+				}			
+			}
+		}
 
 	}
 
