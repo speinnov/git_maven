@@ -12,6 +12,7 @@ pipeline {
 				
 			}
 		}
+		// tests
 		stage('test'){
 			steps{
 			withMaven(maven: 'MVN353'){
@@ -19,15 +20,8 @@ pipeline {
 					//junit 'reports/**/*.xml'
 				}
 			}
-		}
-		stage('Deploy'){
-			steps{
-				withMaven(maven: 'MVN353'){
-
-					sh 'make deploy -X'
-				}			
-			}
-		}
+		} 
+		// deploy
 
 	}
 
