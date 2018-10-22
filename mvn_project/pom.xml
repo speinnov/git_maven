@@ -94,7 +94,7 @@
   <repositories>
     <repository>
       <id>maven-group</id>
-      <url>http://http://macbookprobigdata.local:8181/nexus/content/repositories/maven-group/</url>
+      <url>http://macbookprobigdata.local:8181/nexus/content/repositories/maven-group/</url>
     </repository>
   </repositories>
 
