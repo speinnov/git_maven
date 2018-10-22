@@ -13,14 +13,7 @@ pipeline {
 			}
 		}
 		// tests
-		stage('test'){
-			steps{
-			withMaven(maven: 'MVN353'){
-					sh 'mvn test -X'
-					//junit 'reports/**/*.xml'
-				}
-			}
-		} 
+		 
 		// deploy
 
 	}
